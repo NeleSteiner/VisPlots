@@ -9,7 +9,7 @@
 #' @param size The size of the points.
 #' @param title The title of the plot.
 #' @export
-#'
+
 scatterplot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
                         colour = "purple", size = 5, title = "Scatterplot") {
   library(ggplot2)
@@ -30,7 +30,6 @@ scatterplot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
 #' @param colour The colour for the line.
 #' @param title The title of the plot.
 #' @export
-#'
 
 line_chart <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
                        colour = "blue", title = "Line Chart") {
@@ -52,7 +51,7 @@ line_chart <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
 #' @param colour The colour for the jitters.
 #' @param title The title of the plot.
 #' @export
-#'
+
 jitter_plot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
                        colour = "lightgreen", title = "Jitter Plot") {
   library(ggplot2)
