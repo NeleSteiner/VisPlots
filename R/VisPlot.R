@@ -20,6 +20,30 @@ scatterplot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
     ggtitle(title)
 }
 
+#' Jitter Plot with point shapes (ggplot2)
+#'
+#' @param data The data frame who contains the data.
+#' @param x The variable to be seen on the x-axis.
+#' @param y The variable to be seen on the y-axis.
+#' @param xlab The label for the x-axis.
+#' @param ylab The label for the y-axis.
+#' @param shape The shape for the points.
+#' @param colour The colour for the points.
+#' @param size The size of the points.
+#' @param title The title of the plot.
+#' @export
+
+jitterplot_shape <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
+                             shape = "circle", colour = "orange",
+                             title = "Jitter Plot with point shapes") {
+  library(ggplot2)
+  ggplot(data, aes(x = {{x}}, y = {{y}})) +
+    geom_point(size = "circle", color = colour) +
+    xlab(xlab) +
+    ylab(ylab) +
+    ggtitle(title)
+}
+
 #' Line Chart (ggplot2)
 #'
 #' @param data The data frame who contains the data.
