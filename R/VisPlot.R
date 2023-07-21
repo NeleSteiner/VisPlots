@@ -54,7 +54,7 @@ line_chart <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
 #' @export
 #'
 jitter_plot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
-                       colour = "green", title = "Jitter Plot") {
+                       colour = "lightgreen", title = "Jitter Plot") {
   library(ggplot2)
   ggplot(data, aes(x = {{x}}, y = {{y}})) +
     geom_jitter(color = colour) +
