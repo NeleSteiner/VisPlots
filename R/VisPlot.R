@@ -1,5 +1,5 @@
 
-#' Simplifize the visualization of plots. In the past to semester we did have to
+#' Simplifize the visualisation of plots. In the past to semester we did have to
 #' plot many plots and we thought that it would be easier, if users would know
 #' exactly how they have to plot something. The package visplots is there to
 #' minimalize the work to write a good plot.
@@ -18,9 +18,9 @@
 #'
 #' @examples
 #' scatter_plot(data = oktoberfest_daten, x = jahr, y = besucher_gesamt,
-#'             xlab = "Jahr", ylab = "Anzahl der Besucher (in Millionen)",
+#'             xlab = "year", ylab = "number of visitors (in millions)",
 #'             colour = "purple", size = 3,
-#'             title = "Anzahl der Besucher der Oktoberfeste pro Jahr")
+#'             title = "number of vistors of the Oktoberfest per year")
 
 scatter_plot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
                         colour = "purple", size = 5, title = "Scatter Plot") {
@@ -47,10 +47,10 @@ scatter_plot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
 #'
 #' @examples
 #' jitter_plot_shape(data = oktoberfest_daten, x = bier_preis, y = bier_konsum,
-#'             xlab = "Bierpreis", ylab = "Bierkonsum", shape = "circle",
+#'             xlab = "price for beer", ylab = "beer consumption", shape = "circle",
 #'             colour = "orange",
-#'             title = "Zusammenhang zwischen Bierpreis und Bierkonsum",
-#'             subtitle = "in Abhängigkeit von der Anzahl an Besucher pro Tag")
+#'             title = "Relationship between beer consumption and beer price",
+#'             subtitle = "depending on the number of visitors per day")
 
 jitter_plot_shape <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
                              shape = "circle", colour = "orange",
@@ -76,9 +76,9 @@ jitter_plot_shape <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
 #'
 #' @examples
 #' line_chart(data = oktoberfest_daten, x = jahr, y = bier_konsum,
-#'             xlab = "Jahr", ylab = "Bierkonsum (in hl)",
+#'             xlab = "year", ylab = "beer consumption (in hl)",
 #'             colour = "blue",
-#'             title = "Bierkonsum auf dem Oktoberfest")
+#'             title = "beer consumption during the Oktoberfest")
 
 line_chart <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
                        colour = "blue", title = "Line chart") {
