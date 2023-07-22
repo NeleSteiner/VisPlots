@@ -85,3 +85,5 @@ jitter_plot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
     ylab(ylab) +
     ggtitle(title)
 }
+
+# Mehr Text in Deskription vielleicht
