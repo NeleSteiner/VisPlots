@@ -45,15 +45,16 @@ scatter_plot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
 #' @param title The title of the plot.
 #' @export
 #'
-#' jitterplot_shape(data = oktoberfest_daten, x = bier_preis, y = bier_konsum,
+#' @examples
+#' jitter_plot_shape(data = oktoberfest_daten, x = bier_preis, y = bier_konsum,
 #'             xlab = "Bierpreis", ylab = "Bierkonsum", shape = "circle",
 #'             colour = "orange",
 #'             title = "Zusammenhang zwischen Bierpreis und Bierkonsum",
 #'             subtitle = "in Abhängigkeit von der Anzahl an Besucher pro Tag")
 
-jitterplot_shape <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
+jitter_plot_shape <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
                              shape = "circle", colour = "orange",
-                             title = "Jitter Plot with point shapes") {
+                             title = "Jitter plot with point shapes") {
   library(ggplot2)
   ggplot(data, aes(x = {{x}}, y = {{y}})) +
     geom_point(size = "circle", color = colour) +
@@ -62,7 +63,7 @@ jitterplot_shape <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
     ggtitle(title)
 }
 
-#' Line Chart (ggplot2)
+#' Line chart (ggplot2)
 #'
 #' @param data The data frame who contains the data.
 #' @param x The variable to be shown on the x-axis.
@@ -80,7 +81,7 @@ jitterplot_shape <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
 #'             title = "Bierkonsum auf dem Oktoberfest")
 
 line_chart <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
-                       colour = "blue", title = "Line Chart") {
+                       colour = "blue", title = "Line chart") {
   library(ggplot2)
   ggplot(data, aes(x = {{x}}, y = {{y}})) +
   geom_line(color = colour) +
@@ -89,7 +90,7 @@ line_chart <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
   ggtitle(title)
 }
 
-#' Jitter Plot (ggplot2)
+#' Jitter plot (ggplot2)
 #'
 #' @param data The data frame who contains the data.
 #' @param x The variable to be shown on the x-axis.
@@ -99,6 +100,13 @@ line_chart <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
 #' @param colour The colour for the jitters.
 #' @param title The title of the plot.
 #' @export
+#'
+#' @examples
+#'
+#' jitter_plot(data = christmas_movies_clean, x = release_year, y = stars,
+#'             xlab = "release year", ylab = "number evaluations per year",
+#'             colour = "lightgreen",
+#'             title = "number of evaluations per year")
 
 jitter_plot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
                        colour = "lightgreen", title = "Jitter Plot") {

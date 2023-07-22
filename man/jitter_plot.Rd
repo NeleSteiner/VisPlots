@@ -32,3 +32,10 @@ jitter_plot(
 \description{
 Jitter Plot (ggplot2)
 }
+\examples{
+
+jitter_plot(data = christmas_movies_clean, x = release_year, y = stars,
+            xlab = "release year", ylab = "number evaluations per year",
+            colour = "lightgreen",
+            title = "number of evaluations per year")
+}
