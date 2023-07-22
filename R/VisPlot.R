@@ -118,4 +118,6 @@ jitter_plot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
     ggtitle(title)
 }
 
+turquoise <- "#40E0D0"
+
 # Mehr Text in Deskription vielleicht
