@@ -1,17 +1,29 @@
-#' Scatterplot (ggplot2)
+
+#' Simplifize the visualization of plots. In the past to semester we did have to
+#' plot many plots and we thought that it would be easier, if users would know
+#' exactly how they have to plot something. The package visplots is there to
+#' minimalize the work to write a good plot.
+#'
+#' Creates a scatter plot using ggplot2.
 #'
 #' @param data The data frame who contains the data.
-#' @param x The variable to be seen on the x-axis.
-#' @param y The variable to be seen on the y-axis.
+#' @param x The variable to be shown on the x-axis.
+#' @param y The variable to be shown on the y-axis.
 #' @param xlab The label for the x-axis.
 #' @param ylab The label for the y-axis.
 #' @param colour The colour for the points.
 #' @param size The size of the points.
 #' @param title The title of the plot.
 #' @export
+#'
+#' @examples
+#' scatter_plot(data = oktoberfest_daten, x = jahr, y = besucher_gesamt,
+#'             xlab = "Jahr", ylab = "Anzahl der Besucher (in Millionen)",
+#'             colour = "purple", size = 3,
+#'             title = "Anzahl der Besucher der Oktoberfeste pro Jahr")
 
-scatterplot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
-                        colour = "purple", size = 5, title = "Scatterplot") {
+scatter_plot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
+                        colour = "purple", size = 5, title = "Scatter Plot") {
   library(ggplot2)
   ggplot(data, aes(x = {{x}}, y = {{y}})) +
     geom_point(colour = colour, size = size) +
@@ -20,11 +32,11 @@ scatterplot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
     ggtitle(title)
 }
 
-#' Jitter Plot with point shapes (ggplot2)
+#' Creates a jitter plot with different shapes using ggplot2.
 #'
 #' @param data The data frame who contains the data.
-#' @param x The variable to be seen on the x-axis.
-#' @param y The variable to be seen on the y-axis.
+#' @param x The variable to be shown on the x-axis.
+#' @param y The variable to be shown on the y-axis.
 #' @param xlab The label for the x-axis.
 #' @param ylab The label for the y-axis.
 #' @param shape The shape for the points.
@@ -47,13 +59,19 @@ jitterplot_shape <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
 #' Line Chart (ggplot2)
 #'
 #' @param data The data frame who contains the data.
-#' @param x The variable to be seen on the x-axis.
-#' @param y The variable to be seen on the y-axis.
+#' @param x The variable to be shown on the x-axis.
+#' @param y The variable to be shown on the y-axis.
 #' @param xlab The label for the x-axis.
 #' @param ylab The label for the y-axis.
 #' @param colour The colour for the line.
 #' @param title The title of the plot.
 #' @export
+#'
+#' @examples
+#' line_chart(data = oktoberfest_daten, x = jahr, y = bier_konsum,
+#'             xlab = "Jahr", ylab = "Bierkonsum (in hl)",
+#'             colour = "blue",
+#'             title = "Bierkonsum auf dem Oktoberfest")
 
 line_chart <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
                        colour = "blue", title = "Line Chart") {
@@ -68,8 +86,8 @@ line_chart <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
 #' Jitter Plot (ggplot2)
 #'
 #' @param data The data frame who contains the data.
-#' @param x The variable to be seen on the x-axis.
-#' @param y The variable to be seen on the y-axis.
+#' @param x The variable to be shown on the x-axis.
+#' @param y The variable to be shown on the y-axis.
 #' @param xlab The label for the x-axis.
 #' @param ylab The label for the y-axis.
 #' @param colour The colour for the jitters.

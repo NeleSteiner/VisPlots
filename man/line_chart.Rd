@@ -17,9 +17,9 @@ line_chart(
 \arguments{
 \item{data}{The data frame who contains the data.}
 
-\item{x}{The variable to be seen on the x-axis.}
+\item{x}{The variable to be shown on the x-axis.}
 
-\item{y}{The variable to be seen on the y-axis.}
+\item{y}{The variable to be shown on the y-axis.}
 
 \item{xlab}{The label for the x-axis.}
 
@@ -31,4 +31,10 @@ line_chart(
 }
 \description{
 Line Chart (ggplot2)
+}
+\examples{
+line_chart(data = oktoberfest_daten, x = jahr, y = bier_konsum,
+            xlab = "Jahr", ylab = "Bierkonsum (in hl)",
+            colour = "blue",
+            title = "Bierkonsum auf dem Oktoberfest")
 }

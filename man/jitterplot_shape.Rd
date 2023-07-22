@@ -2,7 +2,7 @@
 % Please edit documentation in R/VisPlot.R
 \name{jitterplot_shape}
 \alias{jitterplot_shape}
-\title{Jitter Plot with point shapes (ggplot2)}
+\title{Creates a jitter plot with different shapes using ggplot2.}
 \usage{
 jitterplot_shape(
   data,
@@ -18,9 +18,9 @@ jitterplot_shape(
 \arguments{
 \item{data}{The data frame who contains the data.}
 
-\item{x}{The variable to be seen on the x-axis.}
+\item{x}{The variable to be shown on the x-axis.}
 
-\item{y}{The variable to be seen on the y-axis.}
+\item{y}{The variable to be shown on the y-axis.}
 
 \item{xlab}{The label for the x-axis.}
 
@@ -35,5 +35,5 @@ jitterplot_shape(
 \item{size}{The size of the points.}
 }
 \description{
-Jitter Plot with point shapes (ggplot2)
+Creates a jitter plot with different shapes using ggplot2.
 }

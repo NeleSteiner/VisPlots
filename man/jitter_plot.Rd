@@ -17,9 +17,9 @@ jitter_plot(
 \arguments{
 \item{data}{The data frame who contains the data.}
 
-\item{x}{The variable to be seen on the x-axis.}
+\item{x}{The variable to be shown on the x-axis.}
 
-\item{y}{The variable to be seen on the y-axis.}
+\item{y}{The variable to be shown on the y-axis.}
 
 \item{xlab}{The label for the x-axis.}
 
