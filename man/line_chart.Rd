@@ -34,7 +34,7 @@ Creates a line chart using ggplot2.
 }
 \examples{
 line_chart(data = oktoberfest_daten, x = jahr, y = bier_konsum,
-            xlab = "Jahr", ylab = "Bierkonsum (in hl)",
+            xlab = "year", ylab = "beer consumption (in hl)",
             colour = "blue",
-            title = "Bierkonsum auf dem Oktoberfest")
+            title = "beer consumption during the Oktoberfest")
 }
