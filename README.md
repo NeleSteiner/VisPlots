@@ -21,8 +21,7 @@ Installation
 You can grab the development version of `visplots` directly from github: 
 
 ```
-library(devtools)
-install_github("NeleSteiner/VisPlots")
+devtools::install_github("NeleSteiner/VisPlots")
 ```
 
 Requirement 
