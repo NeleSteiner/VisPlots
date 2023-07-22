@@ -11,7 +11,7 @@ An object of class \code{character} of length 1.
 colours
 }
 \arguments{
-\item{colour}{The colour for the points.}
+\item{colours}{The colour for the points.}
 }
 \description{
 Define farbcodes, so it will be easier to choose colours.
