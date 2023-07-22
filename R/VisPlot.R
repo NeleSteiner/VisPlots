@@ -44,6 +44,12 @@ scatter_plot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
 #' @param size The size of the points.
 #' @param title The title of the plot.
 #' @export
+#'
+#' jitterplot_shape(data = oktoberfest_daten, x = bier_preis, y = bier_konsum,
+#'             xlab = "Bierpreis", ylab = "Bierkonsum", shape = "circle",
+#'             colour = "orange",
+#'             title = "Zusammenhang zwischen Bierpreis und Bierkonsum",
+#'             subtitle = "in Abhängigkeit von der Anzahl an Besucher pro Tag")
 
 jitterplot_shape <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
                              shape = "circle", colour = "orange",
