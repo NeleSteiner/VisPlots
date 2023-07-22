@@ -2,7 +2,7 @@
 % Please edit documentation in R/VisPlot.R
 \name{jitter_plot}
 \alias{jitter_plot}
-\title{Jitter plot (ggplot2)}
+\title{Creates a jitter plot using ggplot2.}
 \usage{
 jitter_plot(
   data,
@@ -30,7 +30,7 @@ jitter_plot(
 \item{title}{The title of the plot.}
 }
 \description{
-Jitter plot (ggplot2)
+Creates a jitter plot using ggplot2.
 }
 \examples{
 

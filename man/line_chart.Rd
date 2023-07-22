@@ -2,7 +2,7 @@
 % Please edit documentation in R/VisPlot.R
 \name{line_chart}
 \alias{line_chart}
-\title{Line chart (ggplot2)}
+\title{Creates a line chart using ggplot2.}
 \usage{
 line_chart(
   data,
@@ -30,7 +30,7 @@ line_chart(
 \item{title}{The title of the plot.}
 }
 \description{
-Line chart (ggplot2)
+Creates a line chart using ggplot2.
 }
 \examples{
 line_chart(data = oktoberfest_daten, x = jahr, y = bier_konsum,

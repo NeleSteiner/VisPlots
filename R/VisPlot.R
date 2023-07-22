@@ -63,7 +63,7 @@ jitter_plot_shape <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
     ggtitle(title)
 }
 
-#' Line chart (ggplot2)
+#' Creates a line chart using ggplot2.
 #'
 #' @param data The data frame who contains the data.
 #' @param x The variable to be shown on the x-axis.
@@ -90,7 +90,7 @@ line_chart <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
   ggtitle(title)
 }
 
-#' Jitter plot (ggplot2)
+#' Creates a jitter plot using ggplot2.
 #'
 #' @param data The data frame who contains the data.
 #' @param x The variable to be shown on the x-axis.
@@ -119,6 +119,9 @@ jitter_plot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
 }
 
 #' Define farbcodes, so it will be easier to choose colours.
+#' @param colour The colour for the points.
+
+colours <- "colour"
 turquoise <- "#40E0D0"
 lightgreen <- "#90EE90"
 lightblue <- "#ADD8E6"
