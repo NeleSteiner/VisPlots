@@ -12,7 +12,7 @@ Key features:
 3.  Customisable visuals: `visplots` doesn't compromise on customisation options. Users can easily tweak plot colors, size and shape of points as well as labels to create visually striking graphs. With the added feature of choosing different colors, users can now personalise their plots to match their unique preferences.
 4.  Compatibility: `visplots` is designed to be compatible with various data formats commonly used in R, making it seamless to work with data from different sources.
 
-Please note that the `ggplot2` package is a fundamental part of the `visplots` package, providing the underlying framework for creating plots in R. Read the References to get in-depth information about the `ggplot2` package and its functionalities. 
+Please note that the `ggplot2` package is a fundamental part of the `visplots` package, providing the underlying framework for creating plots in R. Read the References to get in-depth information about `ggplot2` and its functionalities. 
 
 
 Installation 
@@ -24,19 +24,19 @@ You can grab the development version of `visplots` directly from github:
 devtools::install_github("NeleSteiner/VisPlots")
 ```
 
-To load the `visplots`package in your R session, use the `library` function: 
+To load the `visplots` package in your R session, use the `library` function: 
 ```
 library(visplots)
 ```
 
-`visplots` relies on the ggplot2 package to create visually appealing and highly customizable plots. Therefore, before using `visplots`, you must ensure that the `ggplot2` package is installed and loaded in your R environment.
+`visplots` relies on the `ggplot2` package to create visually appealing and highly customizable plots. Therefore, before using `visplots`, you must ensure that `ggplot2` is installed and loaded in your R environment.
 
-To install `ggplot2`, you can use the following command: 
+To install the `ggplot2` package, you can use the following command: 
 ```
 install.packages("ggplot2")
 ```
 
-To load the `ggplot2`package in your R session, use the `library` function: 
+To load `ggplot2` in your R session, use the `library` function: 
 ```
 library(ggplot2)
 ```
