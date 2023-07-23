@@ -32,3 +32,13 @@ test_that("line_chart function creates a valid plot", {
                             title = "Test line chart")
   expect_false(is.null(plot_result))
 })
+
+test_that("Box Plot Test", {
+  test_data <- data.frame(x_var = rep(c("Group A", "Group B"), each = 10),
+                     y_var = rnorm(20, mean = c(5, 10), sd = 1))
+  plot_result <- box_plot(data, x = x_var, y = y_var)
+  expect_true("ggplot" %in% class(plot_result))
+  expect_equal(ggtitle(plot_result)$labels, "Box Plot")
+  expect_equal(xlab(plot_result)$label, "x-axis")
+  expect_equal(ylab(plot_result)$label, "y-axis")
+})

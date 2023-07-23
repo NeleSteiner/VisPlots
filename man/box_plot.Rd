@@ -21,18 +21,14 @@ variables will be created. Alternatively you can use a custom function that
 takes the plot data as a single argument. The function must return a
 data.frame, which will be utilized as the layer data.}
 
-\item{x}{The "x" parameter defines the variable whose values will be used to
-determine the position of the data points along the x-axis. The points are
-then connected by lines to form the chart. The x-axis displays the values of
-the x variable at different data points, allowing us to visualize how the
-values of the y variable (on the y-axis) change with respect to the x
-variable.}
+\item{x}{The "x" parameter specifies the variable or the data that will be
+used to create the box plot. It represents the data that will be grouped or
+split into different categories to visualize their distribution and
+variability.}
 
-\item{y}{The "y" parameter defines the variable whose values will be used to
-determine the height or position of the points on the y-axis, which are then
-connected by lines to form the chart. The y-axis displays the values of the y
-variable at different data points, allowing us to visualize how the values
-change over time or another continuous variable represented on the x-axis.}
+\item{y}{The "y" parameter specifies the numerical variable that will be
+represented on the y-axis of the plot. It is the variable for which the
+distribution and variability will be visualized using the box plot.}
 
 \item{xlab}{The "xlab" parameter allows you to specify the label or title for
 the x-axis in your plot. The x-axis label is essential for effectively
@@ -47,14 +43,16 @@ The title provides a clear and concise description of the plot's purpose or
 the main idea it conveys. It is typically placed above the plot to provide
 context and help users understand the data being visualized.}
 
-\item{colour}{The "colour" parameter is used to specify the color of the
-lines that connect the data points. Each line corresponds to a different
-group or category in the data, and the colour parameter allows you to
-customize the color of each line.}
+\item{fill}{The "fill" parameter is used to specify the variable or data that
+will be used to fill the boxes. It allows you to color the boxes based on a
+categorical variable, providing visual distinction between different groups
+or categories of data.}
 }
 \description{
 Creates a box plot using ggplot2.
-beschreibung zu box plot
+Examine the distribution of data and identify potential outliers and
+variability among different categories or groups. The boxplot is particularly
+valuable for comparing data distributions side by side.
 }
 \examples{
 box_plot(data = information_full, x = alter, y = interesse,

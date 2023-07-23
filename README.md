@@ -9,6 +9,7 @@ Key features:
    - scatter plot: Discover relationships and patterns between two numerical variables with a scatter plot, ideal for understanding correlations and identifying outliers.
    - jitter plot: Uncover the distribution of data points along a single axis, revealing the density and spread of values, particularly useful for smaller datasets.
    - line chart: Visualise trends and changes in data over continuous intervals, perfect for time-series data or any dataset with a natural ordering.
+   - box plot: The box plot is a powerful data visualization tool used to examine the distribution of data, identify potential outliers, and understand the variability among different categories or groups
 3.  Customisable visuals: `visplots` doesn't compromise on customisation options. Users can easily tweak plot colors, size and shape of points as well as labels to create visually striking graphs. With the added feature of choosing different colors, users can now personalise their plots to match their unique preferences.
 4.  Compatibility: `visplots` is designed to be compatible with various data formats commonly used in R, making it seamless to work with data from different sources.
 
