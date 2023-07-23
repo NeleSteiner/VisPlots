@@ -20,19 +20,19 @@ the default plot data. All objects will be transformed into a fortified
 data.frame. You can refer to the fortify() function to understand which
 variables will be created. Alternatively you can use a custom function that
 takes the plot data as a single argument. The function must return a
-data.frame, which will be utilized as the layer data.}
+data.frame, which will be utilised as the layer data.}
 
 \item{x}{The "x" parameter defines the variable whose values will be used to
 determine the position of the data points along the x-axis. The points are
 then connected by lines to form the chart. The x-axis displays the values of
-the x variable at different data points, allowing us to visualize how the
+the x variable at different data points, allowing us to visualise how the
 values of the y variable (on the y-axis) change with respect to the x
 variable.}
 
 \item{y}{The "y" parameter defines the variable whose values will be used to
 determine the height or position of the points on the y-axis, which are then
 connected by lines to form the chart. The y-axis displays the values of the y
-variable at different data points, allowing us to visualize how the values
+variable at different data points, allowing us to visualise how the values
 change over time or another continuous variable represented on the x-axis.}
 
 \item{xlab}{The "xlab" parameter allows you to specify the label or title for
@@ -46,12 +46,12 @@ communicating the meaning of the data represented on the vertical axis.}
 \item{colour}{The "colour" parameter is used to specify the color of the
 lines that connect the data points. Each line corresponds to a different
 group or category in the data, and the colour parameter allows you to
-customize the color of each line.}
+customise the color of each line.}
 
 \item{title}{The "title" parameter is used to specify the title of the plot.
 The title provides a clear and concise description of the plot's purpose or
 the main idea it conveys. It is typically placed above the plot to provide
-context and help users understand the data being visualized.}
+context and help users understand the data being visualised.}
 }
 \description{
 Creates a line chart using ggplot2.
