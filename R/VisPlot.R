@@ -237,7 +237,7 @@ box_plot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
 #' @title Colour
 #' @param colour The colour for the points.
 
-colours <- c(turquoise = "#40E0D0", lightgreen = "#90EE90",
+colour <- c(turquoise = "#40E0D0", lightgreen = "#90EE90",
              lightblue = "#ADD8E6", purple = "#A020F0", magenta = "#FF00FF",
              red = "#FF0000", green = "#00FF00", blue = "#0000FF",
              yellow = "#FFFF00", orange = "#FF8800", black = "#000000"
