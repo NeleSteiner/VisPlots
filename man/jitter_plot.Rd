@@ -39,7 +39,7 @@ density and spread of values, particularly useful for smaller datasets.
 \examples{
 
 jitter_plot(data = christmas_movies_clean, x = release_year, y = stars,
-            xlab = "release year", ylab = "number evaluations per year",
+            xlab = "release year", ylab = "number of evaluations per year",
             colour = "lightgreen",
-            title = "number of evaluations per year")
+            title = "number of evaluations per year through release years")
 }

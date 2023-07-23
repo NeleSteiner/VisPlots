@@ -50,9 +50,9 @@ scatter_plot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
 #' @examples
 #'
 #' jitter_plot(data = christmas_movies_clean, x = release_year, y = stars,
-#'             xlab = "release year", ylab = "number evaluations per year",
+#'             xlab = "release year", ylab = "number of evaluations per year",
 #'             colour = "lightgreen",
-#'             title = "number of evaluations per year")
+#'             title = "number of evaluations per year through release years")
 
 jitter_plot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
                         colour = "lightgreen", title = "Jitter Plot") {
@@ -79,7 +79,7 @@ jitter_plot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
 #'
 #' @examples
 #' jitter_plot_shape(data = oktoberfest_daten, x = bier_preis, y = bier_konsum,
-#'             xlab = "price for beer", ylab = "beer consumption",
+#'             xlab = "beer price", ylab = "beer consumption",
 #'             shape = "circle", colour = "orange",
 #'             title = "Relationship between beer consumption and beer price",
 #'             subtitle = "depending on the number of visitors per day")
