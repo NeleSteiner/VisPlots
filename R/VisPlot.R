@@ -121,7 +121,7 @@ jitter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
 #' jitter_plot_shape(data = oktoberfest_daten, x = bier_preis, y = bier_konsum,
 #'             xlab = "beer price", ylab = "beer consumption",
 #'             shape = "circle", colour = "orange",
-#'             title = "Relationship between beer consumption and beer price",
+#'             title = "relationship between beer consumption and beer price",
 #'             subtitle = "depending on the number of visitors per day")
 
 jitter_plot_shape <- function(data = NULL, x, y, xlab = "x-axis",
