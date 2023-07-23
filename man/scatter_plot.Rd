@@ -2,7 +2,7 @@
 % Please edit documentation in R/VisPlot.R
 \name{scatter_plot}
 \alias{scatter_plot}
-\title{Scatter plot}
+\title{Scatter Plot}
 \usage{
 scatter_plot(
   data = NULL,

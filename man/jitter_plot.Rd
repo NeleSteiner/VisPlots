@@ -2,7 +2,7 @@
 % Please edit documentation in R/VisPlot.R
 \name{jitter_plot}
 \alias{jitter_plot}
-\title{Jitter plot}
+\title{Jitter Plot}
 \usage{
 jitter_plot(
   data = NULL,

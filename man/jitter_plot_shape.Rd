@@ -2,7 +2,7 @@
 % Please edit documentation in R/VisPlot.R
 \name{jitter_plot_shape}
 \alias{jitter_plot_shape}
-\title{Jitter plot with different shapes}
+\title{Jitter Plot with different shapes}
 \usage{
 jitter_plot_shape(
   data = NULL,
@@ -12,7 +12,7 @@ jitter_plot_shape(
   ylab = "y-axis",
   shape = NULL,
   colour = NULL,
-  title = "Jitter plot with point shapes"
+  title = "Jitter Plot with different shapes"
 )
 }
 \arguments{

@@ -2,7 +2,7 @@
 % Please edit documentation in R/VisPlot.R
 \name{line_chart}
 \alias{line_chart}
-\title{Line chart}
+\title{Line Chart}
 \usage{
 line_chart(
   data = NULL,
@@ -11,7 +11,7 @@ line_chart(
   xlab = "x-axis",
   ylab = "y-axis",
   colour = "blue",
-  title = "Line chart"
+  title = "Line Chart"
 )
 }
 \arguments{
