@@ -2,10 +2,10 @@
 % Please edit documentation in R/VisPlot.R
 \name{scatter_plot}
 \alias{scatter_plot}
-\title{Simplifize the visualisation of plots. In the past two semester we did have to
-plot many plots and we thought that it would be easier, if users would know
-exactly how they have to plot something. The package visplots is there to
-minimalize the work to write a good plot.}
+\title{During the past two semesters, we had to create numerous plots, and we
+realized that it would be much easier if users could easily plot data without
+struggling with the process. The `visplots` package is designed to minimize
+the effort required to create high-quality plots.}
 \usage{
 scatter_plot(
   data,
