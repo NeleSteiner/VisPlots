@@ -23,11 +23,15 @@ variables will be created. Alternatively you can use a custom function that
 takes the plot data as a single argument. The function must return a
 data.frame, which will be utilized as the layer data.}
 
-\item{x}{The variable to be shown on the x-axis.}
+\item{x}{The "x" parameter would define the variable that will be plotted on
+the horizontal axis.}
 
-\item{y}{The variable to be shown on the y-axis.}
+\item{y}{The "y" parameter would define the variable that will be plotted on
+the vertical axis.}
 
-\item{xlab}{The label for the x-axis.}
+\item{xlab}{The "xlab" parameter allows you to specify the label or title for
+the x-axis in your plot. The x-axis label is essential for effectively
+communicating the meaning of the data represented on the horizontal axis.}
 
 \item{ylab}{The label for the y-axis.}
 

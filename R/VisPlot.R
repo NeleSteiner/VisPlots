@@ -14,9 +14,13 @@
 #' variables will be created. Alternatively you can use a custom function that
 #' takes the plot data as a single argument. The function must return a
 #' data.frame, which will be utilized as the layer data.
-#' @param x The variable to be shown on the x-axis.
-#' @param y The variable to be shown on the y-axis.
-#' @param xlab The label for the x-axis.
+#' @param x The "x" parameter would define the variable that will be plotted on
+#' the horizontal axis.
+#' @param y The "y" parameter would define the variable that will be plotted on
+#' the vertical axis.
+#' @param xlab The "xlab" parameter allows you to specify the label or title for
+#' the x-axis in your plot. The x-axis label is essential for effectively
+#' communicating the meaning of the data represented on the horizontal axis.
 #' @param ylab The label for the y-axis.
 #' @param colour The colour for the points.
 #' @param size The size of the points.
@@ -33,7 +37,7 @@ scatter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
                         colour = NULL, size = NULL,
                         title = "Scatter Plot") {
   library(ggplot2)
-  ggplot(data = NULL, aes(x = {{x}}, y = {{y}})) +
+  ggplot(data = NULL, aes(x = x_var, y = y_var)) +
     geom_point(colour = NULL, size = NULL) +
     xlab(xlab) +
     ylab(ylab) +
@@ -50,9 +54,13 @@ scatter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
 #' variables will be created. Alternatively you can use a custom function that
 #' takes the plot data as a single argument. The function must return a
 #' data.frame, which will be utilized as the layer data.
-#' @param x The variable to be shown on the x-axis.
-#' @param y The variable to be shown on the y-axis.
-#' @param xlab The label for the x-axis.
+#' @param x The "x" parameter would define the variable that will be plotted on
+#' the horizontal axis.
+#' @param y The "y" parameter would define the variable that will be plotted on
+#' the vertical axis.
+#' @param xlab The "xlab" parameter allows you to specify the label or title for
+#' the x-axis in your plot. The x-axis label is essential for effectively
+#' communicating the meaning of the data represented on the horizontal axis.
 #' @param ylab The label for the y-axis.
 #' @param colour The colour for the jitters.
 #' @param title The title of the plot.
@@ -83,9 +91,13 @@ jitter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
 #' variables will be created. Alternatively you can use a custom function that
 #' takes the plot data as a single argument. The function must return a
 #' data.frame, which will be utilized as the layer data.
-#' @param x The variable to be shown on the x-axis.
-#' @param y The variable to be shown on the y-axis.
-#' @param xlab The label for the x-axis.
+#' @param x The "x" parameter would define the variable that will be plotted on
+#' the horizontal axis.
+#' @param y The "y" parameter would define the variable that will be plotted on
+#' the vertical axis.
+#' @param xlab The "xlab" parameter allows you to specify the label or title for
+#' the x-axis in your plot. The x-axis label is essential for effectively
+#' communicating the meaning of the data represented on the horizontal axis.
 #' @param ylab The label for the y-axis.
 #' @param shape The shape for the points.
 #' @param colour The colour for the points.
@@ -121,9 +133,12 @@ jitter_plot_shape <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis
 #' variables will be created. Alternatively you can use a custom function that
 #' takes the plot data as a single argument. The function must return a
 #' data.frame, which will be utilized as the layer data.
-#' @param x The variable to be shown on the x-axis.
+#' @param x The "x" parameter would typically represent time or another continuous
+#' variable that is used to establish the order of the data points.
 #' @param y The variable to be shown on the y-axis.
-#' @param xlab The label for the x-axis.
+#' @param xlab The "xlab" parameter allows you to specify the label or title for
+#' the x-axis in your plot. The x-axis label is essential for effectively
+#' communicating the meaning of the data represented on the horizontal axis.
 #' @param ylab The label for the y-axis.
 #' @param colour The colour for the line.
 #' @param title The title of the plot.
