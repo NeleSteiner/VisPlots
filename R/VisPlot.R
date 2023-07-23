@@ -1,5 +1,5 @@
 
-#' Simplifize the visualization of plots. In the past to semester we did have to
+#' Simplifize the visualisation of plots. In the past to semester we did have to
 #' plot many plots and we thought that it would be easier, if users would know
 #' exactly how they have to plot something. The package visplots is there to
 #' minimalize the work to write a good plot.

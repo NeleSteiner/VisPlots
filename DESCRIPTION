@@ -1,11 +1,12 @@
 Package: visplots
 Type: Package
-Title: Simplifying the visualization of plots can be done in various ways
+Title: Easily Visualisat Plots 
 Version: 1.0.0
-Author: Nele Steiner & Bichmai Vu
+Authors: Nele Steiner & Bichmai Vu
 Maintainer: Bichmai Vu <B.Vu@campus.lmu.de> & Nele Steiner <Nele.Steiner@campus.lmu.de>
-Description: The package should help users to visualize plots easier. Also that they don't have to write long codes and can use our package to have less work.
+Description: The package is designed to simplify the process of data visualisation by automating the creation of plots. With just a few lines of code, users can generate visually appealing and insightful graphs for their own datasets without the need to extensive coding kownledge or prior experience in data visualisation.
 License: Everybody is free to use, share, modify, whatsoever this.
+URL: https://github.com/NeleSteiner/VisPlots
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.3

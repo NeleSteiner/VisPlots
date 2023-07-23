@@ -2,10 +2,9 @@
 % Please edit documentation in R/VisPlot.R
 \name{scatter_plot}
 \alias{scatter_plot}
-\title{Simplifize the visualization of plots. In the past to semester we did have to
-plot many plots and we thought that it would be easier, if users would know
-exactly how they have to plot something. The package visplots is there to
-minimalize the work to write a good plot.}
+\title{Simplifize the visualization of plots. In the past two semesters we used a lot of
+plots and we thought that it would be easier, if users would get information 
+on how to plot the right way. The package visplots enables an reduced workload.}
 \usage{
 scatter_plot(
   data,
@@ -44,5 +43,9 @@ scatter plot, ideal for understanding correlations and identifying outliers.
 scatter_plot(data = oktoberfest_daten, x = jahr, y = besucher_gesamt,
             xlab = "year", ylab = "number of visitors (in millions)",
             colour = "purple", size = 3,
+<<<<<<< HEAD
             title = "number of vistors of the Oktoberfest per year")
+=======
+            title = "number of visitors of the Oktoberfest per year")
+>>>>>>> 3207df3fc70167ae023f4ec4fe7316a578da3777
 }
