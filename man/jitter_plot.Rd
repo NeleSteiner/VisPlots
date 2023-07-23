@@ -20,7 +20,7 @@ the default plot data. All objects will be transformed into a fortified
 data.frame. You can refer to the fortify() function to understand which
 variables will be created. Alternatively you can use a custom function that
 takes the plot data as a single argument. The function must return a
-data.frame, which will be utilized as the layer data.}
+data.frame, which will be utilised as the layer data.}
 
 \item{x}{The "x" parameter would define the variable that will be plotted on
 the horizontal axis.}
@@ -44,7 +44,7 @@ multiple data points have the same value.}
 \item{title}{The "title" parameter is used to specify the title of the plot.
 The title provides a clear and concise description of the plot's purpose or
 the main idea it conveys. It is typically placed above the plot to provide
-context and help users understand the data being visualized.}
+context and help users understand the data being visualised.}
 }
 \description{
 Creates a jitter plot using ggplot2.
