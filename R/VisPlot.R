@@ -1,7 +1,7 @@
 
 #' During the past two semesters we had to create numerous plots and we
-#' realized that it would be much easier if users could easily plot data without
-#' struggling with the process. The `visplots` package is designed to minimize
+#' realised that it would be much easier if users could easily plot data without
+#' struggling with the process. The `visplots` package is designed to minimise
 #' the effort required to create high-quality plots.
 #'
 #' @description Creates a scatter plot using ggplot2.
@@ -13,7 +13,7 @@
 #' data.frame. You can refer to the fortify() function to understand which
 #' variables will be created. Alternatively you can use a custom function that
 #' takes the plot data as a single argument. The function must return a
-#' data.frame, which will be utilized as the layer data.
+#' data.frame, which will be utilised as the layer data.
 #' @param x The "x" parameter would define the variable that will be plotted on
 #' the horizontal axis.
 #' @param y The "y" parameter would define the variable that will be plotted on
@@ -33,7 +33,7 @@
 #' scatter_plot(data = oktoberfest_daten, x = jahr, y = besucher_gesamt,
 #'             xlab = "year", ylab = "number of visitors (in millions)",
 #'             colour = "purple", size = 3,
-#'             title = "number of vistors of the Oktoberfest per year")
+#'             title = "number of visitors of the Oktoberfest per year")
 
 scatter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
                         colour = NULL, size = NULL,
@@ -55,7 +55,7 @@ scatter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
 #' data.frame. You can refer to the fortify() function to understand which
 #' variables will be created. Alternatively you can use a custom function that
 #' takes the plot data as a single argument. The function must return a
-#' data.frame, which will be utilized as the layer data.
+#' data.frame, which will be utilised as the layer data.
 #' @param x The "x" parameter would define the variable that will be plotted on
 #' the horizontal axis.
 #' @param y The "y" parameter would define the variable that will be plotted on
@@ -66,14 +66,14 @@ scatter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
 #' @param ylab The "ylab" parameter allows you to specify the label or title for
 #' the y-axis in your plot. The y-axis label is crucial for effectively
 #' communicating the meaning of the data represented on the vertical axis.
-#' @param colour The "colour" parameter is used to specify the color of the
+#' @param colour The "colour" parameter is used to specify the colour of the
 #' jitters in a jitter plot. A jitter plot is a type of scatter plot where the
 #' data points are slightly jittered along the x-axis to avoid overlapping when
 #' multiple data points have the same value.
 #' @param title The "title" parameter is used to specify the title of the plot.
 #' The title provides a clear and concise description of the plot's purpose or
 #' the main idea it conveys. It is typically placed above the plot to provide
-#' context and help users understand the data being visualized.
+#' context and help users understand the data being visualised.
 #' @export
 #'
 #' @examples
@@ -114,7 +114,7 @@ jitter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
 #' @param shape The "shape" parameter is used to specify the shape of the points
 #' in a scatter plot or other point-based plots. Points are the individual data
 #' markers used to represent the data values in the plot.
-#' @param colour The "colour" parameter is used to specify the color of the
+#' @param colour The "colour" parameter is used to specify the colour of the
 #' jitters in a jitter plot. A jitter plot is a type of scatter plot where the
 #' data points are slightly jittered along the x-axis to avoid overlapping when
 #' multiple data points have the same value.
@@ -124,7 +124,7 @@ jitter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
 #' @param title The "title" parameter is used to specify the title of the plot.
 #' The title provides a clear and concise description of the plot's purpose or
 #' the main idea it conveys. It is typically placed above the plot to provide
-#' context and help users understand the data being visualized.
+#' context and help users understand the data being visualised.
 #' @export
 #'
 #' @examples
@@ -154,17 +154,17 @@ jitter_plot_shape <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis
 #' data.frame. You can refer to the fortify() function to understand which
 #' variables will be created. Alternatively you can use a custom function that
 #' takes the plot data as a single argument. The function must return a
-#' data.frame, which will be utilized as the layer data.
+#' data.frame, which will be utilised as the layer data.
 #' @param x The "x" parameter defines the variable whose values will be used to
 #' determine the position of the data points along the x-axis. The points are
 #' then connected by lines to form the chart. The x-axis displays the values of
-#' the x variable at different data points, allowing us to visualize how the
+#' the x variable at different data points, allowing us to visualise how the
 #' values of the y variable (on the y-axis) change with respect to the x
 #' variable.
 #' @param y The "y" parameter defines the variable whose values will be used to
 #' determine the height or position of the points on the y-axis, which are then
 #' connected by lines to form the chart. The y-axis displays the values of the y
-#' variable at different data points, allowing us to visualize how the values
+#' variable at different data points, allowing us to visualise how the values
 #' change over time or another continuous variable represented on the x-axis.
 #' @param xlab The "xlab" parameter allows you to specify the label or title for
 #' the x-axis in your plot. The x-axis label is essential for effectively
@@ -172,14 +172,14 @@ jitter_plot_shape <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis
 #' @param ylab The "ylab" parameter allows you to specify the label or title for
 #' the y-axis in your plot. The y-axis label is crucial for effectively
 #' communicating the meaning of the data represented on the vertical axis.
-#' @param colour The "colour" parameter is used to specify the color of the
+#' @param colour The "colour" parameter is used to specify the colour of the
 #' lines that connect the data points. Each line corresponds to a different
 #' group or category in the data, and the colour parameter allows you to
-#' customize the color of each line.
+#' customise the color of each line.
 #' @param title The "title" parameter is used to specify the title of the plot.
 #' The title provides a clear and concise description of the plot's purpose or
 #' the main idea it conveys. It is typically placed above the plot to provide
-#' context and help users understand the data being visualized.
+#' context and help users understand the data being visualised.
 #' @export
 #'
 #' @examples
@@ -208,14 +208,14 @@ line_chart <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
 #' data.frame. You can refer to the fortify() function to understand which
 #' variables will be created. Alternatively you can use a custom function that
 #' takes the plot data as a single argument. The function must return a
-#' data.frame, which will be utilized as the layer data.
+#' data.frame, which will be utilised as the layer data.
 #' @param x The "x" parameter specifies the variable or the data that will be
 #' used to create the box plot. It represents the data that will be grouped or
-#' split into different categories to visualize their distribution and
+#' split into different categories to visualise their distribution and
 #' variability.
 #' @param y The "y" parameter specifies the numerical variable that will be
 #' represented on the y-axis of the plot. It is the variable for which the
-#' distribution and variability will be visualized using the box plot.
+#' distribution and variability will be visualised using the box plot.
 #' @param xlab The "xlab" parameter allows you to specify the label or title for
 #' the x-axis in your plot. The x-axis label is essential for effectively
 #' communicating the meaning of the data represented on the horizontal axis.
@@ -223,13 +223,13 @@ line_chart <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
 #' the y-axis in your plot. The y-axis label is crucial for effectively
 #' communicating the meaning of the data represented on the vertical axis.
 #' @param fill The "fill" parameter is used to specify the variable or data that
-#' will be used to fill the boxes. It allows you to color the boxes based on a
+#' will be used to fill the boxes. It allows you to colour the boxes based on a
 #' categorical variable, providing visual distinction between different groups
 #' or categories of data.
 #' @param title The "title" parameter is used to specify the title of the plot.
 #' The title provides a clear and concise description of the plot's purpose or
 #' the main idea it conveys. It is typically placed above the plot to provide
-#' context and help users understand the data being visualized.
+#' context and help users understand the data being visualised.
 #' @export
 #'
 #' @examples
