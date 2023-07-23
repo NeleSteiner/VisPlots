@@ -86,7 +86,7 @@ scatter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
 jitter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
                         colour = NULL, title = "Jitter Plot") {
   library(ggplot2)
-  ggplot(data = NULL, aes(x = {{x}}, y = {{y}})) +
+  ggplot(data = NULL, aes(x = x_var, y = y_var)) +
     geom_jitter(color = NULL) +
     xlab(xlab) +
     ylab(ylab) +
@@ -138,7 +138,7 @@ jitter_plot_shape <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis
                              shape = NULL, colour = NULL,
                              title = "Jitter Plot with different shapes") {
   library(ggplot2)
-  ggplot(data = NULL, aes(x = {{x}}, y = {{y}})) +
+  ggplot(data = NULL, aes(x = x_var, y = y_var)) +
     geom_point(size = NULL, color = NULL) +
     xlab(xlab) +
     ylab(ylab) +
@@ -191,11 +191,64 @@ jitter_plot_shape <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis
 line_chart <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
                        colour = "blue", title = "Line Chart") {
   library(ggplot2)
-  ggplot(data = NULL, aes(x = {{x}}, y = {{y}})) +
+  ggplot(data = NULL, aes(x = x_var, y = y_var)) +
   geom_line(color = NULL) +
   xlab(xlab) +
   ylab(ylab) +
   ggtitle(title)
+}
+
+#' @description Creates a box plot using ggplot2.
+#' beschreibung zu box plot
+#' @title Box Plot
+#' @param data A data.frame or any other object provided will be used to replace
+#' the default plot data. All objects will be transformed into a fortified
+#' data.frame. You can refer to the fortify() function to understand which
+#' variables will be created. Alternatively you can use a custom function that
+#' takes the plot data as a single argument. The function must return a
+#' data.frame, which will be utilized as the layer data.
+#' @param x The "x" parameter defines the variable whose values will be used to
+#' determine the position of the data points along the x-axis. The points are
+#' then connected by lines to form the chart. The x-axis displays the values of
+#' the x variable at different data points, allowing us to visualize how the
+#' values of the y variable (on the y-axis) change with respect to the x
+#' variable.
+#' @param y The "y" parameter defines the variable whose values will be used to
+#' determine the height or position of the points on the y-axis, which are then
+#' connected by lines to form the chart. The y-axis displays the values of the y
+#' variable at different data points, allowing us to visualize how the values
+#' change over time or another continuous variable represented on the x-axis.
+#' @param xlab The "xlab" parameter allows you to specify the label or title for
+#' the x-axis in your plot. The x-axis label is essential for effectively
+#' communicating the meaning of the data represented on the horizontal axis.
+#' @param ylab The "ylab" parameter allows you to specify the label or title for
+#' the y-axis in your plot. The y-axis label is crucial for effectively
+#' communicating the meaning of the data represented on the vertical axis.
+#' @param colour The "colour" parameter is used to specify the color of the
+#' lines that connect the data points. Each line corresponds to a different
+#' group or category in the data, and the colour parameter allows you to
+#' customize the color of each line.
+#' @param title The "title" parameter is used to specify the title of the plot.
+#' The title provides a clear and concise description of the plot's purpose or
+#' the main idea it conveys. It is typically placed above the plot to provide
+#' context and help users understand the data being visualized.
+#' @export
+#'
+#' @examples
+#' box_plot(data = information_full, x = alter, y = interesse,
+#'             xlab = "age", ylab = "interest",
+#'             title = "correlation of age and interests"),
+#'             geom_boxplot(fill = "lightblue"))
+
+box_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
+                     title = "Box Plot") {
+  library(ggplot2)
+  ggplot(data = NULL, aes(x = x_var, y = y_var)) +
+    geom_boxplot(fill = NULL) +
+    xlab(xlab) +
+    ylab(ylab) +
+    stat_boxplot(geom = "errorbar", width = NULL) +
+    ggtitle(title)
 }
 
 #' @description Define farbcodes, so it will be easier to choose colours.
