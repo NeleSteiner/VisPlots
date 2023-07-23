@@ -46,10 +46,6 @@ jitters in a jitter plot.}
 The title provides a clear and concise description of the plot's purpose or
 the main idea it conveys. It is typically placed above the plot to provide
 context and help users understand the data being visualised.}
-
-\item{size}{The "size" parameter is used to specify the size of the points in
-a scatter plot or other point-based plots. Points are the individual data
-markers used to represent the data values in the plot.}
 }
 \description{
 Creates a jitter plot with different shapes using ggplot2.

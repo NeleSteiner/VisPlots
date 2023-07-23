@@ -54,8 +54,12 @@ variability among different categories or groups. The boxplot is particularly
 valuable for comparing data distributions side by side.
 }
 \examples{
-box_plot(data = information_full, x = alter, y = interesse,
+information_full <- data.frame(age = c(54, 33, 81, 19, 24),
+                      interest = c("yoga", "politics", "music",
+                      "music", "politics"))
+
+box_plot(data = information_full, x = age, y = interest,
             xlab = "age", ylab = "interest",
-            title = "correlation of age and interests"),
-            geom_boxplot(fill = "lightblue"))
+            title = "correlation of age and interests",
+            fill = "lightblue")
 }

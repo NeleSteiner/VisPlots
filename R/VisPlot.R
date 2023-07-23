@@ -108,9 +108,6 @@ jitter_plot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
 #' markers used to represent the data values in the plot.
 #' @param colour The "colour" parameter is used to specify the colour of the
 #' jitters in a jitter plot.
-#' @param size The "size" parameter is used to specify the size of the points in
-#' a scatter plot or other point-based plots. Points are the individual data
-#' markers used to represent the data values in the plot.
 #' @param title The "title" parameter is used to specify the title of the plot.
 #' The title provides a clear and concise description of the plot's purpose or
 #' the main idea it conveys. It is typically placed above the plot to provide
@@ -219,10 +216,14 @@ line_chart <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
 #' @export
 #'
 #' @examples
-#' box_plot(data = information_full, x = alter, y = interesse,
+#' information_full <- data.frame(age = c(54, 33, 81, 19, 24),
+#'                       interest = c("yoga", "politics", "music",
+#'                       "music", "politics"))
+#'
+#' box_plot(data = information_full, x = age, y = interest,
 #'             xlab = "age", ylab = "interest",
-#'             title = "correlation of age and interests"),
-#'             geom_boxplot(fill = "lightblue"))
+#'             title = "correlation of age and interests",
+#'             fill = "lightblue")
 
 box_plot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
                      fill = NULL, title = "Box Plot") {
