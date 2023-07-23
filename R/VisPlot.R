@@ -124,9 +124,9 @@ jitter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
 #'             title = "Relationship between beer consumption and beer price",
 #'             subtitle = "depending on the number of visitors per day")
 
-jitter_plot_shape <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
-                             shape = NULL, colour = NULL,
-                             title = "Jitter Plot with different shapes") {
+jitter_plot_shape <- function(data = NULL, x, y, xlab = "x-axis",
+                              ylab = "y-axis", shape = NULL, colour = NULL,
+                              title = "Jitter Plot with different shapes") {
   library(ggplot2)
   ggplot(data = NULL, aes(x = x_var, y = y_var)) +
     geom_point(size = NULL, color = NULL) +
