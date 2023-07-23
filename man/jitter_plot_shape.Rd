@@ -33,15 +33,27 @@ the vertical axis.}
 the x-axis in your plot. The x-axis label is essential for effectively
 communicating the meaning of the data represented on the horizontal axis.}
 
-\item{ylab}{The label for the y-axis.}
+\item{ylab}{The "ylab" parameter allows you to specify the label or title for
+the y-axis in your plot. The y-axis label is crucial for effectively
+communicating the meaning of the data represented on the vertical axis.}
 
-\item{shape}{The shape for the points.}
+\item{shape}{The "shape" parameter is used to specify the shape of the points
+in a scatter plot or other point-based plots. Points are the individual data
+markers used to represent the data values in the plot.}
 
-\item{colour}{The colour for the points.}
+\item{colour}{The "colour" parameter is used to specify the color of the
+jitters in a jitter plot. A jitter plot is a type of scatter plot where the
+data points are slightly jittered along the x-axis to avoid overlapping when
+multiple data points have the same value.}
 
-\item{title}{The title of the plot.}
+\item{title}{The "title" parameter is used to specify the title of the plot.
+The title provides a clear and concise description of the plot's purpose or
+the main idea it conveys. It is typically placed above the plot to provide
+context and help users understand the data being visualized.}
 
-\item{size}{The size of the points.}
+\item{size}{The "size" parameter is used to specify the size of the points in
+a scatter plot or other point-based plots. Points are the individual data
+markers used to represent the data values in the plot.}
 }
 \description{
 Creates a jitter plot with different shapes using ggplot2.

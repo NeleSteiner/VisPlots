@@ -33,7 +33,9 @@ the vertical axis.}
 the x-axis in your plot. The x-axis label is essential for effectively
 communicating the meaning of the data represented on the horizontal axis.}
 
-\item{ylab}{The label for the y-axis.}
+\item{ylab}{The "ylab" parameter allows you to specify the label or title for
+the y-axis in your plot. The y-axis label is crucial for effectively
+communicating the meaning of the data represented on the vertical axis.}
 
 \item{colour}{The colour for the points.}
 

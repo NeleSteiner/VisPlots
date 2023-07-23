@@ -21,7 +21,9 @@
 #' @param xlab The "xlab" parameter allows you to specify the label or title for
 #' the x-axis in your plot. The x-axis label is essential for effectively
 #' communicating the meaning of the data represented on the horizontal axis.
-#' @param ylab The label for the y-axis.
+#' @param ylab The "ylab" parameter allows you to specify the label or title for
+#' the y-axis in your plot. The y-axis label is crucial for effectively
+#' communicating the meaning of the data represented on the vertical axis.
 #' @param colour The colour for the points.
 #' @param size The size of the points.
 #' @param title The title of the plot.
@@ -61,9 +63,17 @@ scatter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
 #' @param xlab The "xlab" parameter allows you to specify the label or title for
 #' the x-axis in your plot. The x-axis label is essential for effectively
 #' communicating the meaning of the data represented on the horizontal axis.
-#' @param ylab The label for the y-axis.
-#' @param colour The colour for the jitters.
-#' @param title The title of the plot.
+#' @param ylab The "ylab" parameter allows you to specify the label or title for
+#' the y-axis in your plot. The y-axis label is crucial for effectively
+#' communicating the meaning of the data represented on the vertical axis.
+#' @param colour The "colour" parameter is used to specify the color of the
+#' jitters in a jitter plot. A jitter plot is a type of scatter plot where the
+#' data points are slightly jittered along the x-axis to avoid overlapping when
+#' multiple data points have the same value.
+#' @param title The "title" parameter is used to specify the title of the plot.
+#' The title provides a clear and concise description of the plot's purpose or
+#' the main idea it conveys. It is typically placed above the plot to provide
+#' context and help users understand the data being visualized.
 #' @export
 #'
 #' @examples
@@ -98,11 +108,23 @@ jitter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
 #' @param xlab The "xlab" parameter allows you to specify the label or title for
 #' the x-axis in your plot. The x-axis label is essential for effectively
 #' communicating the meaning of the data represented on the horizontal axis.
-#' @param ylab The label for the y-axis.
-#' @param shape The shape for the points.
-#' @param colour The colour for the points.
-#' @param size The size of the points.
-#' @param title The title of the plot.
+#' @param ylab The "ylab" parameter allows you to specify the label or title for
+#' the y-axis in your plot. The y-axis label is crucial for effectively
+#' communicating the meaning of the data represented on the vertical axis.
+#' @param shape The "shape" parameter is used to specify the shape of the points
+#' in a scatter plot or other point-based plots. Points are the individual data
+#' markers used to represent the data values in the plot.
+#' @param colour The "colour" parameter is used to specify the color of the
+#' jitters in a jitter plot. A jitter plot is a type of scatter plot where the
+#' data points are slightly jittered along the x-axis to avoid overlapping when
+#' multiple data points have the same value.
+#' @param size The "size" parameter is used to specify the size of the points in
+#' a scatter plot or other point-based plots. Points are the individual data
+#' markers used to represent the data values in the plot.
+#' @param title The "title" parameter is used to specify the title of the plot.
+#' The title provides a clear and concise description of the plot's purpose or
+#' the main idea it conveys. It is typically placed above the plot to provide
+#' context and help users understand the data being visualized.
 #' @export
 #'
 #' @examples
@@ -133,15 +155,31 @@ jitter_plot_shape <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis
 #' variables will be created. Alternatively you can use a custom function that
 #' takes the plot data as a single argument. The function must return a
 #' data.frame, which will be utilized as the layer data.
-#' @param x The "x" parameter would typically represent time or another continuous
-#' variable that is used to establish the order of the data points.
-#' @param y The variable to be shown on the y-axis.
+#' @param x The "x" parameter defines the variable whose values will be used to
+#' determine the position of the data points along the x-axis. The points are
+#' then connected by lines to form the chart. The x-axis displays the values of
+#' the x variable at different data points, allowing us to visualize how the
+#' values of the y variable (on the y-axis) change with respect to the x
+#' variable.
+#' @param y The "y" parameter defines the variable whose values will be used to
+#' determine the height or position of the points on the y-axis, which are then
+#' connected by lines to form the chart. The y-axis displays the values of the y
+#' variable at different data points, allowing us to visualize how the values
+#' change over time or another continuous variable represented on the x-axis.
 #' @param xlab The "xlab" parameter allows you to specify the label or title for
 #' the x-axis in your plot. The x-axis label is essential for effectively
 #' communicating the meaning of the data represented on the horizontal axis.
-#' @param ylab The label for the y-axis.
-#' @param colour The colour for the line.
-#' @param title The title of the plot.
+#' @param ylab The "ylab" parameter allows you to specify the label or title for
+#' the y-axis in your plot. The y-axis label is crucial for effectively
+#' communicating the meaning of the data represented on the vertical axis.
+#' @param colour The "colour" parameter is used to specify the color of the
+#' lines that connect the data points. Each line corresponds to a different
+#' group or category in the data, and the colour parameter allows you to
+#' customize the color of each line.
+#' @param title The "title" parameter is used to specify the title of the plot.
+#' The title provides a clear and concise description of the plot's purpose or
+#' the main idea it conveys. It is typically placed above the plot to provide
+#' context and help users understand the data being visualized.
 #' @export
 #'
 #' @examples

@@ -22,20 +22,36 @@ variables will be created. Alternatively you can use a custom function that
 takes the plot data as a single argument. The function must return a
 data.frame, which will be utilized as the layer data.}
 
-\item{x}{The "x" parameter would typically represent time or another continuous
-variable that is used to establish the order of the data points.}
+\item{x}{The "x" parameter defines the variable whose values will be used to
+determine the position of the data points along the x-axis. The points are
+then connected by lines to form the chart. The x-axis displays the values of
+the x variable at different data points, allowing us to visualize how the
+values of the y variable (on the y-axis) change with respect to the x
+variable.}
 
-\item{y}{The variable to be shown on the y-axis.}
+\item{y}{The "y" parameter defines the variable whose values will be used to
+determine the height or position of the points on the y-axis, which are then
+connected by lines to form the chart. The y-axis displays the values of the y
+variable at different data points, allowing us to visualize how the values
+change over time or another continuous variable represented on the x-axis.}
 
 \item{xlab}{The "xlab" parameter allows you to specify the label or title for
 the x-axis in your plot. The x-axis label is essential for effectively
 communicating the meaning of the data represented on the horizontal axis.}
 
-\item{ylab}{The label for the y-axis.}
+\item{ylab}{The "ylab" parameter allows you to specify the label or title for
+the y-axis in your plot. The y-axis label is crucial for effectively
+communicating the meaning of the data represented on the vertical axis.}
 
-\item{colour}{The colour for the line.}
+\item{colour}{The "colour" parameter is used to specify the color of the
+lines that connect the data points. Each line corresponds to a different
+group or category in the data, and the colour parameter allows you to
+customize the color of each line.}
 
-\item{title}{The title of the plot.}
+\item{title}{The "title" parameter is used to specify the title of the plot.
+The title provides a clear and concise description of the plot's purpose or
+the main idea it conveys. It is typically placed above the plot to provide
+context and help users understand the data being visualized.}
 }
 \description{
 Creates a line chart using ggplot2.
