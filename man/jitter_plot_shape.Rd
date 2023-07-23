@@ -5,13 +5,13 @@
 \title{Jitter Plot with different shapes}
 \usage{
 jitter_plot_shape(
-  data = NULL,
+  data,
   x,
   y,
   xlab = "x-axis",
   ylab = "y-axis",
-  shape = NULL,
-  colour = NULL,
+  shape,
+  colour,
   title = "Jitter Plot with different shapes"
 )
 }

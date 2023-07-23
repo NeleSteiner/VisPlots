@@ -5,12 +5,12 @@
 \title{Jitter Plot}
 \usage{
 jitter_plot(
-  data = NULL,
+  data,
   x,
   y,
   xlab = "x-axis",
   ylab = "y-axis",
-  colour = NULL,
+  colour,
   title = "Jitter Plot"
 )
 }

@@ -33,12 +33,12 @@
 #'             colour = "purple", size = 3,
 #'             title = "number of visitors of the Oktoberfest per year")
 
-scatter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
-                        colour = NULL, size = NULL,
-                        title = "Scatter Plot") {
+scatter_plot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
+                         colour, size,
+                         title = "Scatter Plot") {
   library(ggplot2)
-  ggplot(data = NULL, aes(x = {{x}}, y = {{y}})) +
-    geom_point(colour = NULL, size = NULL) +
+  ggplot(data, aes(x = {{x}}, y = {{y}})) +
+    geom_point(colour = colour, size = size) +
     xlab(xlab) +
     ylab(ylab) +
     ggtitle(title)
@@ -77,11 +77,11 @@ scatter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
 #'             colour = "lightgreen",
 #'             title = "number of evaluations per year through release years")
 
-jitter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
-                        colour = NULL, title = "Jitter Plot") {
+jitter_plot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
+                        colour, title = "Jitter Plot") {
   library(ggplot2)
-  ggplot(data = NULL, aes(x = {{x}}, y = {{y}})) +
-    geom_jitter(color = NULL) +
+  ggplot(data, aes(x = {{x}}, y = {{y}})) +
+    geom_jitter(colour = colour) +
     xlab(xlab) +
     ylab(ylab) +
     ggtitle(title)
@@ -124,12 +124,12 @@ jitter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
 #'             title = "relationship between beer consumption and beer price",
 #'             subtitle = "depending on the number of visitors per day")
 
-jitter_plot_shape <- function(data = NULL, x, y, xlab = "x-axis",
-                              ylab = "y-axis", shape = NULL, colour = NULL,
+jitter_plot_shape <- function(data, x, y, xlab = "x-axis",
+                              ylab = "y-axis", shape, colour,
                               title = "Jitter Plot with different shapes") {
   library(ggplot2)
-  ggplot(data = NULL, aes(x = {{x}}, y = {{y}})) +
-    geom_point(size = NULL, color = NULL) +
+  ggplot(data, aes(x = {{x}}, y = {{y}})) +
+    geom_point(shape = shape, colour = colour) +
     xlab(xlab) +
     ylab(ylab) +
     ggtitle(title)
@@ -176,11 +176,11 @@ jitter_plot_shape <- function(data = NULL, x, y, xlab = "x-axis",
 #'             colour = "blue",
 #'             title = "beer consumption during the Oktoberfest")
 
-line_chart <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
-                       colour = "blue", title = "Line Chart") {
+line_chart <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
+                       colour, title = "Line Chart") {
   library(ggplot2)
-  ggplot(data = NULL, aes(x = {{x}}, y = {{y}})) +
-  geom_line(color = NULL) +
+  ggplot(data, aes(x = {{x}}, y = {{y}})) +
+  geom_line(colour = colour) +
   xlab(xlab) +
   ylab(ylab) +
   ggtitle(title)
@@ -224,14 +224,12 @@ line_chart <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
 #'             title = "correlation of age and interests"),
 #'             geom_boxplot(fill = "lightblue"))
 
-box_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
-                     title = "Box Plot") {
+box_plot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
+                     fill = NULL, title = "Box Plot") {
   library(ggplot2)
-  ggplot(data = NULL, aes(x = {{x}}, y = {{y}})) +
-    geom_boxplot(fill = NULL) +
-    xlab(xlab) +
-    ylab(ylab) +
-    stat_boxplot(geom = "errorbar", width = NULL) +
+  ggplot(data, aes(x = {{x}}, y = {{y}})) +
+    geom_boxplot(fill = fill) +
+    labs(x = xlab, y = ylab) +
     ggtitle(title)
 }
 
@@ -239,15 +237,8 @@ box_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
 #' @title Colour
 #' @param colour The colour for the points.
 
-colour <- "colour"
-turquoise <- "#40E0D0"
-lightgreen <- "#90EE90"
-lightblue <- "#ADD8E6"
-purple <- "#A020F0"
-magenta <- "#FF00FF"
-red <- "#FF0000"
-green <- "#00FF00"
-blue <- "#0000FF"
-yellow <- "#FFFF00"
-orange <- "#FF8800"
-black <- "#000000"
+colours <- c(turquoise = "#40E0D0", lightgreen = "#90EE90",
+             lightblue = "#ADD8E6", purple = "#A020F0", magenta = "#FF00FF",
+             red = "#FF0000", green = "#00FF00", blue = "#0000FF",
+             yellow = "#FFFF00", orange = "#FF8800", black = "#000000"
+)

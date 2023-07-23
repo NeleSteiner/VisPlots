@@ -1,6 +1,4 @@
-context("Test visplots function")
-
-test_that("Scatter plot function works correctly", {
+test_that("scatter_plot function works correctly", {
   test_data <- data.frame(x = c(1, 2, 3, 4, 5), y = c(2, 4, 6, 8, 10))
   plot_result <- scatter_plot(test_data, x = x, y = y, xlab = "x-axis",
                               ylab = "y-axis", colour = "purple", size = 3,

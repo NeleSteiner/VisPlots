@@ -5,13 +5,13 @@
 \title{Scatter Plot}
 \usage{
 scatter_plot(
-  data = NULL,
+  data,
   x,
   y,
   xlab = "x-axis",
   ylab = "y-axis",
-  colour = NULL,
-  size = NULL,
+  colour,
+  size,
   title = "Scatter Plot"
 )
 }

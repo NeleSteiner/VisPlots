@@ -5,11 +5,12 @@
 \title{Box Plot}
 \usage{
 box_plot(
-  data = NULL,
+  data,
   x,
   y,
   xlab = "x-axis",
   ylab = "y-axis",
+  fill = NULL,
   title = "Box Plot"
 )
 }
@@ -36,15 +37,15 @@ communicating the meaning of the data represented on the horizontal axis.}
 the y-axis in your plot. The y-axis label is crucial for effectively
 communicating the meaning of the data represented on the vertical axis.}
 
-\item{title}{The "title" parameter is used to specify the title of the plot.
-The title provides a clear and concise description of the plot's purpose or
-the main idea it conveys. It is typically placed above the plot to provide
-context and help users understand the data being visualised.}
-
 \item{fill}{The "fill" parameter is used to specify the variable or data that
 will be used to fill the boxes. It allows you to colour the boxes based on a
 categorical variable, providing visual distinction between different groups
 or categories of data.}
+
+\item{title}{The "title" parameter is used to specify the title of the plot.
+The title provides a clear and concise description of the plot's purpose or
+the main idea it conveys. It is typically placed above the plot to provide
+context and help users understand the data being visualised.}
 }
 \description{
 Creates a box plot using ggplot2.

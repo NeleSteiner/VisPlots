@@ -5,12 +5,12 @@
 \title{Line Chart}
 \usage{
 line_chart(
-  data = NULL,
+  data,
   x,
   y,
   xlab = "x-axis",
   ylab = "y-axis",
-  colour = "blue",
+  colour,
   title = "Line Chart"
 )
 }
