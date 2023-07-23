@@ -163,7 +163,7 @@ jitter_plot_shape <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis
 #' @param colour The "colour" parameter is used to specify the colour of the
 #' lines that connect the data points. Each line corresponds to a different
 #' group or category in the data, and the colour parameter allows you to
-#' customise the color of each line.
+#' customise the colour of each line.
 #' @param title The "title" parameter is used to specify the title of the plot.
 #' The title provides a clear and concise description of the plot's purpose or
 #' the main idea it conveys. It is typically placed above the plot to provide

@@ -17,9 +17,7 @@ jitter_plot_shape(
 }
 \arguments{
 \item{data}{A data.frame or any other object provided will be used to replace
-the default plot data. All objects will be transformed into a fortified
-data.frame. You can refer to the fortify() function to understand which
-variables will be created. Alternatively you can use a custom function that
+the default plot data. Alternatively you can use a custom function that
 takes the plot data as a single argument. The function must return a
 data.frame, which will be utilised as the layer data.}
 
@@ -42,9 +40,7 @@ in a scatter plot or other point-based plots. Points are the individual data
 markers used to represent the data values in the plot.}
 
 \item{colour}{The "colour" parameter is used to specify the colour of the
-jitters in a jitter plot. A jitter plot is a type of scatter plot where the
-data points are slightly jittered along the x-axis to avoid overlapping when
-multiple data points have the same value.}
+jitters in a jitter plot.}
 
 \item{title}{The "title" parameter is used to specify the title of the plot.
 The title provides a clear and concise description of the plot's purpose or

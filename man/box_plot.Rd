@@ -15,9 +15,7 @@ box_plot(
 }
 \arguments{
 \item{data}{A data.frame or any other object provided will be used to replace
-the default plot data. All objects will be transformed into a fortified
-data.frame. You can refer to the fortify() function to understand which
-variables will be created. Alternatively you can use a custom function that
+the default plot data. Alternatively you can use a custom function that
 takes the plot data as a single argument. The function must return a
 data.frame, which will be utilised as the layer data.}
 

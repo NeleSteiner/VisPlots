@@ -17,9 +17,7 @@ scatter_plot(
 }
 \arguments{
 \item{data}{A data.frame or any other object provided will be used to replace
-the default plot data. All objects will be transformed into a fortified
-data.frame. You can refer to the fortify() function to understand which
-variables will be created. Alternatively you can use a custom function that
+the default plot data. Alternatively you can use a custom function that
 takes the plot data as a single argument. The function must return a
 data.frame, which will be utilised as the layer data.}
 
@@ -50,7 +48,7 @@ scatter plot, ideal for understanding correlations and identifying outliers.
 }
 \details{
 During the past two semesters we had to create numerous plots and we
-realized that it would be much easier if users could easily plot data without
+realised that it would be much easier if users could easily plot data without
 struggling with the process. The `visplots` package is designed to minimise
 the effort required to create high-quality plots.
 }
