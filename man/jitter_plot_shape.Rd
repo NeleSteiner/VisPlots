@@ -21,7 +21,7 @@ the default plot data. All objects will be transformed into a fortified
 data.frame. You can refer to the fortify() function to understand which
 variables will be created. Alternatively you can use a custom function that
 takes the plot data as a single argument. The function must return a
-data.frame, which will be utilized as the layer data.}
+data.frame, which will be utilised as the layer data.}
 
 \item{x}{The "x" parameter would define the variable that will be plotted on
 the horizontal axis.}
@@ -41,7 +41,7 @@ communicating the meaning of the data represented on the vertical axis.}
 in a scatter plot or other point-based plots. Points are the individual data
 markers used to represent the data values in the plot.}
 
-\item{colour}{The "colour" parameter is used to specify the color of the
+\item{colour}{The "colour" parameter is used to specify the colour of the
 jitters in a jitter plot. A jitter plot is a type of scatter plot where the
 data points are slightly jittered along the x-axis to avoid overlapping when
 multiple data points have the same value.}
@@ -49,7 +49,7 @@ multiple data points have the same value.}
 \item{title}{The "title" parameter is used to specify the title of the plot.
 The title provides a clear and concise description of the plot's purpose or
 the main idea it conveys. It is typically placed above the plot to provide
-context and help users understand the data being visualized.}
+context and help users understand the data being visualised.}
 
 \item{size}{The "size" parameter is used to specify the size of the points in
 a scatter plot or other point-based plots. Points are the individual data
