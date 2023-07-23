@@ -37,7 +37,7 @@ scatter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
                         colour = NULL, size = NULL,
                         title = "Scatter Plot") {
   library(ggplot2)
-  ggplot(data = NULL, aes(x = x_var, y = y_var)) +
+  ggplot(data = NULL, aes(x = {{x}}, y = {{y}})) +
     geom_point(colour = NULL, size = NULL) +
     xlab(xlab) +
     ylab(ylab) +
@@ -80,7 +80,7 @@ scatter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
 jitter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
                         colour = NULL, title = "Jitter Plot") {
   library(ggplot2)
-  ggplot(data = NULL, aes(x = x_var, y = y_var)) +
+  ggplot(data = NULL, aes(x = {{x}}, y = {{y}})) +
     geom_jitter(color = NULL) +
     xlab(xlab) +
     ylab(ylab) +
@@ -128,7 +128,7 @@ jitter_plot_shape <- function(data = NULL, x, y, xlab = "x-axis",
                               ylab = "y-axis", shape = NULL, colour = NULL,
                               title = "Jitter Plot with different shapes") {
   library(ggplot2)
-  ggplot(data = NULL, aes(x = x_var, y = y_var)) +
+  ggplot(data = NULL, aes(x = {{x}}, y = {{y}})) +
     geom_point(size = NULL, color = NULL) +
     xlab(xlab) +
     ylab(ylab) +
@@ -179,7 +179,7 @@ jitter_plot_shape <- function(data = NULL, x, y, xlab = "x-axis",
 line_chart <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
                        colour = "blue", title = "Line Chart") {
   library(ggplot2)
-  ggplot(data = NULL, aes(x = x_var, y = y_var)) +
+  ggplot(data = NULL, aes(x = {{x}}, y = {{y}})) +
   geom_line(color = NULL) +
   xlab(xlab) +
   ylab(ylab) +
@@ -227,7 +227,7 @@ line_chart <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
 box_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
                      title = "Box Plot") {
   library(ggplot2)
-  ggplot(data = NULL, aes(x = x_var, y = y_var)) +
+  ggplot(data = NULL, aes(x = {{x}}, y = {{y}})) +
     geom_boxplot(fill = NULL) +
     xlab(xlab) +
     ylab(ylab) +
