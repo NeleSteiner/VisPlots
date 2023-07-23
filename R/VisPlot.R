@@ -1,14 +1,19 @@
 
-#' During the past two semesters, we had to create numerous plots, and we
+#' During the past two semesters we had to create numerous plots and we
 #' realized that it would be much easier if users could easily plot data without
 #' struggling with the process. The `visplots` package is designed to minimize
 #' the effort required to create high-quality plots.
 #'
-#' Creates a scatter plot using ggplot2.
+#' @description Creates a scatter plot using ggplot2.
 #' Discover relationships and patterns between two numerical variables with a
 #' scatter plot, ideal for understanding correlations and identifying outliers.
-#'
-#' @param data The data frame who contains the data.
+#' @title Scatter plot
+#' @param data A data.frame or any other object provided will be used to replace
+#' the default plot data. All objects will be transformed into a fortified
+#' data.frame. You can refer to the fortify() function to understand which
+#' variables will be created. Alternatively you can use a custom function that
+#' takes the plot data as a single argument. The function must return a
+#' data.frame, which will be utilized as the layer data.
 #' @param x The variable to be shown on the x-axis.
 #' @param y The variable to be shown on the y-axis.
 #' @param xlab The label for the x-axis.
@@ -24,21 +29,27 @@
 #'             colour = "purple", size = 3,
 #'             title = "number of vistors of the Oktoberfest per year")
 
-scatter_plot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
-                        colour = "purple", size = 5, title = "Scatter Plot") {
+scatter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
+                        colour = NULL, size = NULL,
+                        title = "Scatter Plot") {
   library(ggplot2)
-  ggplot(data, aes(x = {{x}}, y = {{y}})) +
-    geom_point(colour = colour, size = size) +
+  ggplot(data = NULL, aes(x = {{x}}, y = {{y}})) +
+    geom_point(colour = NULL, size = NULL) +
     xlab(xlab) +
     ylab(ylab) +
     ggtitle(title)
 }
 
-#' Creates a jitter plot using ggplot2.
+#' @description Creates a jitter plot using ggplot2.
 #' Uncover the distribution of data points along a single axis, revealing the
 #' density and spread of values, particularly useful for smaller datasets.
-#'
-#' @param data The data frame who contains the data.
+#' @title Jitter plot
+#' @param data A data.frame or any other object provided will be used to replace
+#' the default plot data. All objects will be transformed into a fortified
+#' data.frame. You can refer to the fortify() function to understand which
+#' variables will be created. Alternatively you can use a custom function that
+#' takes the plot data as a single argument. The function must return a
+#' data.frame, which will be utilized as the layer data.
 #' @param x The variable to be shown on the x-axis.
 #' @param y The variable to be shown on the y-axis.
 #' @param xlab The label for the x-axis.
@@ -54,19 +65,24 @@ scatter_plot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
 #'             colour = "lightgreen",
 #'             title = "number of evaluations per year through release years")
 
-jitter_plot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
-                        colour = "lightgreen", title = "Jitter Plot") {
+jitter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
+                        colour = NULL, title = "Jitter Plot") {
   library(ggplot2)
-  ggplot(data, aes(x = {{x}}, y = {{y}})) +
-    geom_jitter(color = colour) +
+  ggplot(data = NULL, aes(x = {{x}}, y = {{y}})) +
+    geom_jitter(color = NULL) +
     xlab(xlab) +
     ylab(ylab) +
     ggtitle(title)
 }
 
-#' Creates a jitter plot with different shapes using ggplot2.
-#'
-#' @param data The data frame who contains the data.
+#' @description Creates a jitter plot with different shapes using ggplot2.
+#' @title Jitter plot with different shapes
+#' @param data A data.frame or any other object provided will be used to replace
+#' the default plot data. All objects will be transformed into a fortified
+#' data.frame. You can refer to the fortify() function to understand which
+#' variables will be created. Alternatively you can use a custom function that
+#' takes the plot data as a single argument. The function must return a
+#' data.frame, which will be utilized as the layer data.
 #' @param x The variable to be shown on the x-axis.
 #' @param y The variable to be shown on the y-axis.
 #' @param xlab The label for the x-axis.
@@ -84,22 +100,27 @@ jitter_plot <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
 #'             title = "Relationship between beer consumption and beer price",
 #'             subtitle = "depending on the number of visitors per day")
 
-jitter_plot_shape <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
-                             shape = "circle", colour = "orange",
+jitter_plot_shape <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
+                             shape = NULL, colour = NULL,
                              title = "Jitter plot with point shapes") {
   library(ggplot2)
-  ggplot(data, aes(x = {{x}}, y = {{y}})) +
-    geom_point(size = "circle", color = colour) +
+  ggplot(data = NULL, aes(x = {{x}}, y = {{y}})) +
+    geom_point(size = NULL, color = NULL) +
     xlab(xlab) +
     ylab(ylab) +
     ggtitle(title)
 }
 
-#' Creates a line chart using ggplot2.
+#' @description Creates a line chart using ggplot2.
 #' Visualise trends and changes in data over continuous intervals, perfect for
 #' time-series data or any dataset with a natural ordering.
-#'
-#' @param data The data frame who contains the data.
+#' @title Line chart
+#' @param data A data.frame or any other object provided will be used to replace
+#' the default plot data. All objects will be transformed into a fortified
+#' data.frame. You can refer to the fortify() function to understand which
+#' variables will be created. Alternatively you can use a custom function that
+#' takes the plot data as a single argument. The function must return a
+#' data.frame, which will be utilized as the layer data.
 #' @param x The variable to be shown on the x-axis.
 #' @param y The variable to be shown on the y-axis.
 #' @param xlab The label for the x-axis.
@@ -114,20 +135,21 @@ jitter_plot_shape <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
 #'             colour = "blue",
 #'             title = "beer consumption during the Oktoberfest")
 
-line_chart <- function(data, x, y, xlab = "x-axis", ylab = "y-axis",
+line_chart <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
                        colour = "blue", title = "Line chart") {
   library(ggplot2)
-  ggplot(data, aes(x = {{x}}, y = {{y}})) +
-  geom_line(color = colour) +
+  ggplot(data = NULL, aes(x = {{x}}, y = {{y}})) +
+  geom_line(color = NULL) +
   xlab(xlab) +
   ylab(ylab) +
   ggtitle(title)
 }
 
-#' Define farbcodes, so it will be easier to choose colours.
-#' @param colours The colour for the points.
+#' @description Define farbcodes, so it will be easier to choose colours.
+#' @title Colour
+#' @param colour The colour for the points.
 
-colours <- "colour"
+colour <- "colour"
 turquoise <- "#40E0D0"
 lightgreen <- "#90EE90"
 lightblue <- "#ADD8E6"

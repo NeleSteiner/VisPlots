@@ -2,22 +2,25 @@
 % Please edit documentation in R/VisPlot.R
 \name{jitter_plot}
 \alias{jitter_plot}
-\title{Creates a jitter plot using ggplot2.
-Uncover the distribution of data points along a single axis, revealing the
-density and spread of values, particularly useful for smaller datasets.}
+\title{Jitter plot}
 \usage{
 jitter_plot(
-  data,
+  data = NULL,
   x,
   y,
   xlab = "x-axis",
   ylab = "y-axis",
-  colour = "lightgreen",
+  colour = NULL,
   title = "Jitter Plot"
 )
 }
 \arguments{
-\item{data}{The data frame who contains the data.}
+\item{data}{A data.frame or any other object provided will be used to replace
+the default plot data. All objects will be transformed into a fortified
+data.frame. You can refer to the fortify() function to understand which
+variables will be created. Alternatively you can use a custom function that
+takes the plot data as a single argument. The function must return a
+data.frame, which will be utilized as the layer data.}
 
 \item{x}{The variable to be shown on the x-axis.}
 

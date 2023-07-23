@@ -2,12 +2,10 @@
 % Please edit documentation in R/VisPlot.R
 \name{line_chart}
 \alias{line_chart}
-\title{Creates a line chart using ggplot2.
-Visualise trends and changes in data over continuous intervals, perfect for
-time-series data or any dataset with a natural ordering.}
+\title{Line chart}
 \usage{
 line_chart(
-  data,
+  data = NULL,
   x,
   y,
   xlab = "x-axis",
@@ -17,7 +15,12 @@ line_chart(
 )
 }
 \arguments{
-\item{data}{The data frame who contains the data.}
+\item{data}{A data.frame or any other object provided will be used to replace
+the default plot data. All objects will be transformed into a fortified
+data.frame. You can refer to the fortify() function to understand which
+variables will be created. Alternatively you can use a custom function that
+takes the plot data as a single argument. The function must return a
+data.frame, which will be utilized as the layer data.}
 
 \item{x}{The variable to be shown on the x-axis.}
 

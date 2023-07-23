@@ -2,21 +2,26 @@
 % Please edit documentation in R/VisPlot.R
 \name{jitter_plot_shape}
 \alias{jitter_plot_shape}
-\title{Creates a jitter plot with different shapes using ggplot2.}
+\title{Jitter plot with different shapes}
 \usage{
 jitter_plot_shape(
-  data,
+  data = NULL,
   x,
   y,
   xlab = "x-axis",
   ylab = "y-axis",
-  shape = "circle",
-  colour = "orange",
+  shape = NULL,
+  colour = NULL,
   title = "Jitter plot with point shapes"
 )
 }
 \arguments{
-\item{data}{The data frame who contains the data.}
+\item{data}{A data.frame or any other object provided will be used to replace
+the default plot data. All objects will be transformed into a fortified
+data.frame. You can refer to the fortify() function to understand which
+variables will be created. Alternatively you can use a custom function that
+takes the plot data as a single argument. The function must return a
+data.frame, which will be utilized as the layer data.}
 
 \item{x}{The variable to be shown on the x-axis.}
 

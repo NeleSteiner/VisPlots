@@ -2,24 +2,26 @@
 % Please edit documentation in R/VisPlot.R
 \name{scatter_plot}
 \alias{scatter_plot}
-\title{During the past two semesters, we had to create numerous plots, and we
-realized that it would be much easier if users could easily plot data without
-struggling with the process. The `visplots` package is designed to minimize
-the effort required to create high-quality plots.}
+\title{Scatter plot}
 \usage{
 scatter_plot(
-  data,
+  data = NULL,
   x,
   y,
   xlab = "x-axis",
   ylab = "y-axis",
-  colour = "purple",
-  size = 5,
+  colour = NULL,
+  size = NULL,
   title = "Scatter Plot"
 )
 }
 \arguments{
-\item{data}{The data frame who contains the data.}
+\item{data}{A data.frame or any other object provided will be used to replace
+the default plot data. All objects will be transformed into a fortified
+data.frame. You can refer to the fortify() function to understand which
+variables will be created. Alternatively you can use a custom function that
+takes the plot data as a single argument. The function must return a
+data.frame, which will be utilized as the layer data.}
 
 \item{x}{The variable to be shown on the x-axis.}
 
@@ -39,6 +41,12 @@ scatter_plot(
 Creates a scatter plot using ggplot2.
 Discover relationships and patterns between two numerical variables with a
 scatter plot, ideal for understanding correlations and identifying outliers.
+}
+\details{
+During the past two semesters we had to create numerous plots and we
+realized that it would be much easier if users could easily plot data without
+struggling with the process. The `visplots` package is designed to minimize
+the effort required to create high-quality plots.
 }
 \examples{
 scatter_plot(data = oktoberfest_daten, x = jahr, y = besucher_gesamt,
