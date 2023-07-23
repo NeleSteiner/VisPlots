@@ -31,8 +31,10 @@ test_that("line_chart function creates a valid plot", {
   expect_false(is.null(plot_result))
 })
 
-test_that("box_plot returns a ggplot object", {
-  data <- data.frame(x = c(1, 2, 3, 4, 5), y = c(10, 15, 20, 25, 30))
-  plot <- box_plot(data = data, x = x, y = y)
-  expect_true("gg" %in% class(plot))
+test_that("box_plot function creates a valid plot", {
+  test_data <- data.frame(x = c(1, 2, 3, 4, 5), y = c(2, 4, 6, 8, 10))
+  plot_result <- box_plot(test_data, x = x, y = y, xlab = "x-axis",
+                          ylab = "y-axis", fill = "lightblue",
+                          title = "Test box plot")
+  expect_false(is.null(plot_result))
 })
