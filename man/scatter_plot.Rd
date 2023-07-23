@@ -58,5 +58,5 @@ the effort required to create high-quality plots.
 scatter_plot(data = oktoberfest_daten, x = jahr, y = besucher_gesamt,
             xlab = "year", ylab = "number of visitors (in millions)",
             colour = "purple", size = 3,
-            title = "number of vistors of the Oktoberfest per year")
+            title = "number of visitors of the Oktoberfest per year")
 }
