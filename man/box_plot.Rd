@@ -19,16 +19,16 @@ the default plot data. All objects will be transformed into a fortified
 data.frame. You can refer to the fortify() function to understand which
 variables will be created. Alternatively you can use a custom function that
 takes the plot data as a single argument. The function must return a
-data.frame, which will be utilized as the layer data.}
+data.frame, which will be utilised as the layer data.}
 
 \item{x}{The "x" parameter specifies the variable or the data that will be
 used to create the box plot. It represents the data that will be grouped or
-split into different categories to visualize their distribution and
+split into different categories to visualise their distribution and
 variability.}
 
 \item{y}{The "y" parameter specifies the numerical variable that will be
 represented on the y-axis of the plot. It is the variable for which the
-distribution and variability will be visualized using the box plot.}
+distribution and variability will be visualised using the box plot.}
 
 \item{xlab}{The "xlab" parameter allows you to specify the label or title for
 the x-axis in your plot. The x-axis label is essential for effectively
@@ -41,10 +41,10 @@ communicating the meaning of the data represented on the vertical axis.}
 \item{title}{The "title" parameter is used to specify the title of the plot.
 The title provides a clear and concise description of the plot's purpose or
 the main idea it conveys. It is typically placed above the plot to provide
-context and help users understand the data being visualized.}
+context and help users understand the data being visualised.}
 
 \item{fill}{The "fill" parameter is used to specify the variable or data that
-will be used to fill the boxes. It allows you to color the boxes based on a
+will be used to fill the boxes. It allows you to colour the boxes based on a
 categorical variable, providing visual distinction between different groups
 or categories of data.}
 }
