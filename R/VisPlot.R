@@ -9,9 +9,7 @@
 #' scatter plot, ideal for understanding correlations and identifying outliers.
 #' @title Scatter Plot
 #' @param data A data.frame or any other object provided will be used to replace
-#' the default plot data. All objects will be transformed into a fortified
-#' data.frame. You can refer to the fortify() function to understand which
-#' variables will be created. Alternatively you can use a custom function that
+#' the default plot data. Alternatively you can use a custom function that
 #' takes the plot data as a single argument. The function must return a
 #' data.frame, which will be utilised as the layer data.
 #' @param x The "x" parameter would define the variable that will be plotted on
@@ -51,9 +49,7 @@ scatter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
 #' density and spread of values, particularly useful for smaller datasets.
 #' @title Jitter Plot
 #' @param data A data.frame or any other object provided will be used to replace
-#' the default plot data. All objects will be transformed into a fortified
-#' data.frame. You can refer to the fortify() function to understand which
-#' variables will be created. Alternatively you can use a custom function that
+#' the default plot data. Alternatively you can use a custom function that
 #' takes the plot data as a single argument. The function must return a
 #' data.frame, which will be utilised as the layer data.
 #' @param x The "x" parameter would define the variable that will be plotted on
@@ -67,9 +63,7 @@ scatter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
 #' the y-axis in your plot. The y-axis label is crucial for effectively
 #' communicating the meaning of the data represented on the vertical axis.
 #' @param colour The "colour" parameter is used to specify the colour of the
-#' jitters in a jitter plot. A jitter plot is a type of scatter plot where the
-#' data points are slightly jittered along the x-axis to avoid overlapping when
-#' multiple data points have the same value.
+#' jitters in a jitter plot.
 #' @param title The "title" parameter is used to specify the title of the plot.
 #' The title provides a clear and concise description of the plot's purpose or
 #' the main idea it conveys. It is typically placed above the plot to provide
@@ -96,11 +90,9 @@ jitter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
 #' @description Creates a jitter plot with different shapes using ggplot2.
 #' @title Jitter Plot with different shapes
 #' @param data A data.frame or any other object provided will be used to replace
-#' the default plot data. All objects will be transformed into a fortified
-#' data.frame. You can refer to the fortify() function to understand which
-#' variables will be created. Alternatively you can use a custom function that
+#' the default plot data. Alternatively you can use a custom function that
 #' takes the plot data as a single argument. The function must return a
-#' data.frame, which will be utilized as the layer data.
+#' data.frame, which will be utilised as the layer data.
 #' @param x The "x" parameter would define the variable that will be plotted on
 #' the horizontal axis.
 #' @param y The "y" parameter would define the variable that will be plotted on
@@ -115,9 +107,7 @@ jitter_plot <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
 #' in a scatter plot or other point-based plots. Points are the individual data
 #' markers used to represent the data values in the plot.
 #' @param colour The "colour" parameter is used to specify the colour of the
-#' jitters in a jitter plot. A jitter plot is a type of scatter plot where the
-#' data points are slightly jittered along the x-axis to avoid overlapping when
-#' multiple data points have the same value.
+#' jitters in a jitter plot.
 #' @param size The "size" parameter is used to specify the size of the points in
 #' a scatter plot or other point-based plots. Points are the individual data
 #' markers used to represent the data values in the plot.
@@ -150,9 +140,7 @@ jitter_plot_shape <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis
 #' time-series data or any dataset with a natural ordering.
 #' @title Line Chart
 #' @param data A data.frame or any other object provided will be used to replace
-#' the default plot data. All objects will be transformed into a fortified
-#' data.frame. You can refer to the fortify() function to understand which
-#' variables will be created. Alternatively you can use a custom function that
+#' the default plot data. Alternatively you can use a custom function that
 #' takes the plot data as a single argument. The function must return a
 #' data.frame, which will be utilised as the layer data.
 #' @param x The "x" parameter defines the variable whose values will be used to
@@ -204,9 +192,7 @@ line_chart <- function(data = NULL, x, y, xlab = "x-axis", ylab = "y-axis",
 #' valuable for comparing data distributions side by side.
 #' @title Box Plot
 #' @param data A data.frame or any other object provided will be used to replace
-#' the default plot data. All objects will be transformed into a fortified
-#' data.frame. You can refer to the fortify() function to understand which
-#' variables will be created. Alternatively you can use a custom function that
+#' the default plot data. Alternatively you can use a custom function that
 #' takes the plot data as a single argument. The function must return a
 #' data.frame, which will be utilised as the layer data.
 #' @param x The "x" parameter specifies the variable or the data that will be
