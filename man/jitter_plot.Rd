@@ -2,7 +2,9 @@
 % Please edit documentation in R/VisPlot.R
 \name{jitter_plot}
 \alias{jitter_plot}
-\title{Creates a jitter plot using ggplot2.}
+\title{Creates a jitter plot using ggplot2.
+Uncover the distribution of data points along a single axis, revealing the
+density and spread of values, particularly useful for smaller datasets.}
 \usage{
 jitter_plot(
   data,
@@ -31,6 +33,8 @@ jitter_plot(
 }
 \description{
 Creates a jitter plot using ggplot2.
+Uncover the distribution of data points along a single axis, revealing the
+density and spread of values, particularly useful for smaller datasets.
 }
 \examples{
 

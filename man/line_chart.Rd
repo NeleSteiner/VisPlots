@@ -2,7 +2,9 @@
 % Please edit documentation in R/VisPlot.R
 \name{line_chart}
 \alias{line_chart}
-\title{Creates a line chart using ggplot2.}
+\title{Creates a line chart using ggplot2.
+Visualise trends and changes in data over continuous intervals, perfect for
+time-series data or any dataset with a natural ordering.}
 \usage{
 line_chart(
   data,
@@ -31,10 +33,12 @@ line_chart(
 }
 \description{
 Creates a line chart using ggplot2.
+Visualise trends and changes in data over continuous intervals, perfect for
+time-series data or any dataset with a natural ordering.
 }
 \examples{
 line_chart(data = oktoberfest_daten, x = jahr, y = bier_konsum,
-            xlab = "Jahr", ylab = "Bierkonsum (in hl)",
+            xlab = "year", ylab = "beer consumption (in hl)",
             colour = "blue",
-            title = "Bierkonsum auf dem Oktoberfest")
+            title = "beer consumption during the Oktoberfest")
 }

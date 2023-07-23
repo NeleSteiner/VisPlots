@@ -39,8 +39,8 @@ Creates a jitter plot with different shapes using ggplot2.
 }
 \examples{
 jitter_plot_shape(data = oktoberfest_daten, x = bier_preis, y = bier_konsum,
-            xlab = "Bierpreis", ylab = "Bierkonsum", shape = "circle",
+            xlab = "price for beer", ylab = "beer consumption", shape = "circle",
             colour = "orange",
-            title = "Zusammenhang zwischen Bierpreis und Bierkonsum",
-            subtitle = "in Abhängigkeit von der Anzahl an Besucher pro Tag")
+            title = "Relationship between beer consumption and beer price",
+            subtitle = "depending on the number of visitors per day")
 }

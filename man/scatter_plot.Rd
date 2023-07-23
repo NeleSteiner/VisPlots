@@ -37,10 +37,12 @@ scatter_plot(
 }
 \description{
 Creates a scatter plot using ggplot2.
+Discover relationships and patterns between two numerical variables with a
+scatter plot, ideal for understanding correlations and identifying outliers.
 }
 \examples{
 scatter_plot(data = oktoberfest_daten, x = jahr, y = besucher_gesamt,
-            xlab = "Jahr", ylab = "Anzahl der Besucher (in Millionen)",
+            xlab = "year", ylab = "number of visitors (in millions)",
             colour = "purple", size = 3,
-            title = "Anzahl der Besucher der Oktoberfeste pro Jahr")
+            title = "number of vistors of the Oktoberfest per year")
 }
