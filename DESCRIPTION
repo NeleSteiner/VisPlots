@@ -4,7 +4,7 @@ Title: Easily Design Plots
 Version: 1.0.0
 Author: Nele Steiner, Bichmai Vu
 Maintainer: Bichmai Vu <B.Vu@campus.lmu.de>, Nele Steiner <Nele.Steiner@campus.lmu.de>
-Description: The package is designed to simplify the process of data visualization by automating the creation of plots.
+Description: The package is designed to simplify the process of data visualisation by automating the creation of plots.
 License: GPL-3
 URL: https://github.com/NeleSteiner/VisPlots
 Encoding: UTF-8
